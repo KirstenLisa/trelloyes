@@ -8,13 +8,18 @@ export class Card extends React.Component {
 
     return (
         <div className="Card">
-         <button type="button">delete</button>
+         <button 
+            onClick={() => this.props.onClickDelete(this.props.id)}
+            type="button">
+                delete
+         </button>
          <h3>{this.props.title}</h3>
          <p>{this.props.cardContent}</p>
       </div>
     );
 
     }
+      
 }
 
 export default Card;
