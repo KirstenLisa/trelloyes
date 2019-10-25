@@ -25,7 +25,7 @@ export class List extends React.Component {
                 <button
                     type='button'
                     className='List-add-button'
-                    onClick={() => this.props.onClickAdd(this.props.id)}
+                    onClick={() => this.props.onClickAdd(this.props.listId)}
                     >
                     + Add Random Card
                 </button>

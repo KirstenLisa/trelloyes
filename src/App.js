@@ -91,6 +91,7 @@ class App extends React.Component {
               key={item.id}
               header={item.header}
               cards={item.cardIds.map(id => this.state.content.allCards[id])}
+              listId={item.id}
               onClickDelete={this.handleDeleteCard}
               onClickAdd={this.handleAddCard}
             />))}
